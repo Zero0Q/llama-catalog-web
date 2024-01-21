@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CyberFlix Catalog Stremio Addon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css"
+    />
+
+    <link rel="stylesheet" href="static/css/index.css" />
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+    <gradient_body>
+      <gradient_body>
+        <center_body>
+          <h1>Cyberflix</h1>
+          <div class="center">
+            <img src="static/assets/logo.png" />
+          </div>
+          <div class="separator_small"></div>
+          <p>
+            Cyberflix Catalog, an add-on for Stremio, aggregates catalogs from the most
+            popular steaming platforms such as Netflix, Amazon Prime, Hulu and also
+            specific catalogs for kids, Asian content and anime.
+          </p>
+          <select id="iCatalogs" class="input" multiple="multiple">
+            <option value="premieres.movie" selected="true">Premieres Movies</option>
+            <option value="premieres.series" selected="true">Premieres Series</option>
+            <option value="trending.movie" selected="true">Trending Movies</option>
+            <option value="trending.series" selected="true">Trending Series</option>
+            \
+
+            <option value="netflix.popular_movies.movie" selected="true">
+              Netflix - Popular Movies
+            </option>
+            <option value="netflix.popular_series.series" selected="true">
+              Netflix - Popular Series
+            </option>
+            <option value="netflix.new_movies.movie">Netflix - New Movies</option>
+            <option value="netflix.new_series.series">Netflix - New Series</option>
+
+            <option value="disney_plus.popular_movies.movie" selected="true">
+              Disney Plus - Popular Movies
+            </option>
+            <option value="disney_plus.popular_series.series" selected="true">
+              Disney Plus - Popular Series
+            </option>
+            <option value="disney_plus.new_movies.movie">
+              Disney Plus - New Movies
+            </option>
+            <option value="disney_plus.new_series.series">
+              Disney Plus - New Series
+            </option>
+
+            <option value="hbo_max.popular_movies.movie" selected="true">
+              HBO Max - Popular Movies
+            </option>
+            <option value="hbo_max.popular_series.series" selected="true">
+              HBO Max - Popular Series
+            </option>
+            <option value="hbo_max.new_movies.movie">HBO Max - New Movies</option>
+            <option value="hbo_max.new_series.series">HBO Max - New Series</option>
+
+            <option value="amazon_prime.popular_movies.movie" selected="true">
+              Amazon Prime - Popular Movies
+            </option>
+            <option value="amazon_prime.popular_series.series" selected="true">
+              Amazon Prime - Popular Series
+            </option>
+            <option value="amazon_prime.new_movies.movie">
+              Amazon Prime - New Movies
+            </option>
+            <option value="amazon_prime.new_series.series">
+              Amazon Prime - New Series
+            </option>
+
+            <option value="apple_tv_plus.popular_movies.movie">
+              Apple Tv Plus - Popular Movies
+            </option>
+            <option value="apple_tv_plus.popular_series.series">
+              Apple Tv Plus - Popular Series
+            </option>
+            <option value="apple_tv_plus.new_movies.movie">
+              Apple Tv Plus - New Movies
+            </option>
+            <option value="apple_tv_plus.new_series.series">
+              Apple Tv Plus - New Series
+            </option>
+
+            <option value="hulu.popular_movies.movie">Hulu - Popular Movies</option>
+            <option value="hulu.popular_series.series">Hulu - Popular Series</option>
+            <option value="hulu.new_movies.movie">Hulu - New Movies</option>
+            <option value="hulu.new_series.series">Hulu - New Series</option>
+
+            <option value="paramount_plus.popular_movies.movie">
+              Paramount Plus - Popular Movies
+            </option>
+            <option value="paramount_plus.popular_series.series">
+              Paramount Plus - Popular Series
+            </option>
+            <option value="paramount_plus.new_movies.movie">
+              Paramount Plus - New Movies
+            </option>
+            <option value="paramount_plus.new_series.series">
+              Paramount Plus - New Series
+            </option>
+
+            <option value="peacock_premium.popular_movies.movie">
+              Peacock Premium - Popular Movies
+            </option>
+            <option value="peacock_premium.popular_series.series">
+              Peacock Premium - Popular Series
+            </option>
+            <option value="peacock_premium.new_movies.movie">
+              Peacock Premium - New Movies
+            </option>
+            <option value="peacock_premium.new_series.series">
+              Peacock Premium - New Series
+            </option>
+
+            <option value="starz.popular_movies.movie">Starz - Popular Movies</option>
+            <option value="starz.popular_series.series">Starz - Popular Series</option>
+            <option value="starz.new_movies.movie">Starz - New Movies</option>
+            <option value="starz.new_series.series">Starz - New Series</option>
+
+            <option value="sky_showtime.popular_movies.movie">
+              Sky Showtime - Popular Movies
+            </option>
+            <option value="sky_showtime.popular_series.series">
+              Sky Showtime - Popular Series
+            </option>
+            <option value="sky_showtime.new_movies.movie">
+              Sky Showtime - New Movies
+            </option>
+            <option value="sky_showtime.new_series.series">
+              Sky Showtime - New Series
+            </option>
+
+            <option value="rakuten_tv.popular_movies.movie">
+              Rakuten TV - Popular Movies
+            </option>
+            <option value="rakuten_tv.popular_series.series">
+              Rakuten TV - Popular Series
+            </option>
+            <option value="rakuten_tv.new_movies.movie">Rakuten TV - New Movies</option>
+            <option value="rakuten_tv.new_series.series">
+              Rakuten TV - New Series
+            </option>
+
+            <option value="awards.oscar_winners.any" selected="true">
+              Oscar Winners Awards
+            </option>
+            <option value="awards.emmy_winners.any" selected="true">
+              Emmy Winners Awards
+            </option>
+            <option value="awards.golden_globe_winners.any" selected="true">
+              Golden Globe Winners Awards
+            </option>
+
+            <option value="kids.popular_movies.movie" selected="true">
+              Kids - Popular Movies
+            </option>
+            <option value="kids.popular_series.series" selected="true">
+              Kids - Popular Series
+            </option>
+            <option value="kids.new_movies.movie">Kids - New Movies</option>
+            <option value="kids.new_series.series">Kids - New Series</option>
+
+            <option value="anime.trending_movies.movie" selected="true">
+              Anime - Trending Movies
+            </option>
+            <option value="anime.trending_series.series" selected="true">
+              Anime - Trending Series
+            </option>
+            <option value="anime.popular_movies.movie">Anime - Popular Movies</option>
+            <option value="anime.popular_series.series">Anime - Popular Series</option>
+            <option value="anime.new_movies.movie">Anime - New Movies</option>
+            <option value="anime.new_series.series">Anime - New Series</option>
+            <option value="anime.winter_season.series" selected="true">
+              Anime - Winter Season Series
+            </option>
+            <option value="anime.spring_season.series" selected="true">
+              Anime - Spring Season Series
+            </option>
+            <option value="anime.summer_season.series" selected="true">
+              Anime - Summer Season Series
+            </option>
+            <option value="anime.fall_season.series" selected="true">
+              Anime - Fall Season Series
+            </option>
+
+            <option value="asian.popular_movies.movie">Asian - Popular Movies</option>
+            <option value="asian.popular_series.series">Asian - Popular Series</option>
+            <option value="asian.new_movies.movie">Asian - New Movies</option>
+            <option value="asian.new_series.series">Asian - New Series</option>
+
+            <option value="hayu.series">Hayu Series</option>
+
+            <option value="curiosity_stream.movie">Curiosity Stream Movies</option>
+            <option value="curiosity_stream.series">Curiosity Stream Series</option>
+
+            <option value="magellan_tv.movie">Magellan TV Movies</option>
+            <option value="magellan_tv.series">Magellan TV Series</option>
+
+            <option value="canal+.movie">🇫🇷 Canal+ Movies</option>
+            <option value="canal+.series">🇫🇷 Canal+ Series</option>
+
+            <option value="videoland.movie">🇳🇱 Videoland Movies</option>
+            <option value="videoland.series">🇳🇱 Videoland Series</option>
+
+            <option value="globo_play.movie">🇧🇷 Globo Play Movies</option>
+            <option value="globo_play.series">🇧🇷 Globo Play Series</option>
+
+            <option value="hotstar.movie">🇮🇳 Hotstar Movies</option>
+            <option value="hotstar.series">🇮🇳 Hotstar Series</option>
+
+            <option value="zee5.movie">🇮🇳 Zee5 Movies</option>
+            <option value="zee5.series">🇮🇳 Zee5 Series</option>
+          </select>
+          <div class="separator_micro"></div>
+          <input
+            id="iRPDB"
+            class="input text_input"
+            type="text"
+            placeholder="Enter RPDB Key(optional)"
+            onchange="generateInstallLink()"
+          />
+          <div class="separator_small"></div>
+          <div class="center">
+            <a id="installLink" href="#" class="install_button"> INSTALL</a>
+          </div>
+          <div class="links_container">
+            <tr>
+              <a
+                href="https://stremio-addons.netlify.app/cyberflix-catalog.html"
+                target="_blank"
+                title="Thumbs up this addon on Stremio Addon Catalog"
+              >
+                <img src="static/assets/thumbsup.png" />
+              </a>
+              <a
+                href="https://ko-fi.com/marcojoao"
+                target="_blank"
+                title="Support me on Ko-fi"
+              >
+                <img src="static/assets/kofi.png" />
+              </a>
+            </tr>
+          </div>
+        </center_body>
+      </gradient_body>
+    </gradient_body>
+  </body>
+</html>

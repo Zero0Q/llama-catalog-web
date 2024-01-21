@@ -1,0 +1,129 @@
+body {
+  font-family: "Tomorrow", sans-serif;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to left, rgba(0, 0, 0, 0.75), transparent 20%),
+    linear-gradient(to right, rgba(0, 0, 0, 0.75), transparent 20%),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-size: cover;
+}
+img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+
+.separator {
+  margin-bottom: 4vh;
+}
+
+.separator_small {
+  margin-bottom: 2vh;
+}
+
+.separator_micro {
+  margin-bottom: 1vh;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-group,
+.multiselect-container {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+}
+
+.text_input {
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+}
+
+.links_container {
+  text-align: center;
+  margin: 15px;
+}
+
+.install_button {
+  background-color: #9c3535;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-family: "Tomorrow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  /* background-color: #cd4444; */
+  color: #fff;
+  text-decoration: none;
+}
+
+gradient_body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+}
+
+center_body {
+  background-color: #1a1d21e8;
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  display: block;
+  margin: 0 auto;
+  width: 440px;
+  border-radius: 30px;
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Tomorrow", sans-serif;
+}
+
+p {
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 420px;
+}
